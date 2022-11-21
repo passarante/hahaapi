@@ -52,7 +52,7 @@ async function aksiyon() {
         '--disable-setuid-sandbox'
       ]
     });
-
+    console.log("object");
 
 
     const page = await browser.newPage();

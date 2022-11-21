@@ -46,7 +46,11 @@ async function aksiyon() {
     //async function getPrices (){
 
     const browser = await puppeteer.launch({
-      headless: true // setting this to true will not run the UI
+      headless: true, // setting this to true will not run the UI,
+      'args': [
+        '--no-sandbox',
+        '--disable-setuid-sandbox'
+      ]
     });
     console.log("async çalıştı")
 
@@ -86,7 +90,6 @@ async function aksiyon() {
     let element = await page.$(sec);
     const innerTextSelector = '#satis__genel__ALTIN';
     await page.waitForSelector(sec);
-    console.log("for başı")
     //let json = await element.$eval(innerTextSelector,(elem)=> elem.textContent);
     //eskiDeger=json;
 

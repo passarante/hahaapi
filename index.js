@@ -52,7 +52,6 @@ async function aksiyon() {
         '--disable-setuid-sandbox'
       ]
     });
-    console.log("async çalıştı")
 
 
 

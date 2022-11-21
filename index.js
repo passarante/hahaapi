@@ -54,7 +54,6 @@ async function aksiyon() {
     });
 
 
-    console.log("first")
 
     const page = await browser.newPage();
 

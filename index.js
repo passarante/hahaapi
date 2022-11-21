@@ -47,7 +47,7 @@ async function aksiyon() {
 
     const browser = await puppeteer.launch({
       headless: true, // setting this to true will not run the UI,
-      'args': [
+      args: [
         '--no-sandbox',
         '--disable-setuid-sandbox'
       ]
